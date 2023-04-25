@@ -1,0 +1,46 @@
+<script type="text/javascript">
+   
+    class Result{
+        marks(){
+            let Physics = parseInt(prompt("enter your Physics marks :-"));
+           let Chemistry = parseInt(prompt("enter your Chemistry marks :-"));
+           let Biology = parseInt(prompt("enter your Biology marks :-"));
+           let Mathematics = parseInt(prompt("enter your Mathematics marks :-"));
+           let Computer = parseInt(prompt("enter your Computer marks :-"));
+
+           document.write(`<h3> Physics Marks:- ${Physics}</h3>`);
+           document.write(`<h3> Chemistry Marks:- ${Chemistry}</h3>`);
+           document.write(`<h3> Biology Marks:- ${Biology}</h3>`);
+            document.write(`<h3> Mathematics Marks:- ${Mathematics}</h3>`);
+            document.write(`<h3> Computer Marks:- ${Computer}</h3>`);
+          
+          let totle = Physics + Chemistry + Biology + Mathematics + Computer ;
+            document.write(`<h2>The Total marks is: ${totle}</h2>`);
+            let per = (totle/500)*100;
+            document.write(`<h2>The Percentag is: ${per}</h2>`);
+            if(per >= 90){
+            document.write("<h2> Grade :- Grade A</h2>");
+            }
+            else if(per >=80){
+            document.write("<h2>Grade :- Grade B</h2>");
+            }
+            else if(per >=70){
+            document.write("<h2>Grade :- Grade C</h2>");
+            }
+            else if(per >=60){
+            document.write("<h2>Grade :- Grade D</h2>");
+            }
+            else if(per >=50){
+            document.write("<h2>Grade :- Grade E</h2>");
+            }
+            else if(per >=40){
+            document.write("<h2>Grade :- Grade F</h2>");
+            }
+            else{ 
+            document.write("<h2>Grade :- Fail</h2>");
+            } 
+          }
+    }
+    let ans = new Result();
+    ans.marks();
+</script>

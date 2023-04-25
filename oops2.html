@@ -1,0 +1,54 @@
+<table border="1">
+    <tr>
+        <td>Name</td>
+        <td>Email</td>
+        <td>phone</td>
+    </tr>
+    <tbody id="record">
+
+    </tbody>
+
+</table>
+<script type="text/javascript">
+            class datial{
+                
+                constructor(){
+                    let  data =[
+                {
+                    name : "jay",
+                    email : "jay@gmail.com",
+                    phone : "8593930233",
+                },
+                {
+                    name : "ajay",
+                    email : "ajay@gmail.com",
+                    phone : "4555554554",
+                },
+                {
+                    name : "vijay",
+                    email : "vijay@gmail.com",
+                    phone : "4548664556",
+                },
+                {
+                    name : "ashish",
+                    email : "ashish@gmail.com",
+                    phone : "5861821664",
+                },
+            ];
+            let tbl ='';
+             data.forEach((val)=>{
+                 tbl += `
+                    <tr>
+                        <td>${val.name}</td>
+                        <td>${val.email}</td>
+                        <td>${val.phone}</td>
+                    </tr>
+                `       
+             });
+             document.getElementById('record').innerHTML = tbl;
+                }
+            }   
+      
+         
+             let ans = new datial(); 
+</script>
